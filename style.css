@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.console {
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    overflow-y: auto;
+    scroll-behavior: smooth; 
+}
+
+.console-history {
+    padding: 24px 24px 0 24px;
+    color: #fff;
+}
+
+.console-input-log, .console-output-log {
+    box-sizing: border-box;
+    padding: 6px 0;
+}
+
+.console-input-container {
+    color: #fff;
+    padding: 6px 24px;
+    display: flex;
+    word-break: break-all;
+}
+
+.console-input {
+    flex: 1;
+    border: none;
+    color: #fff;
+    background: transparent;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .console-history, .console-input-container {
+        font-size: 14px;
+        padding: 16px 16px 0 16px; /* Smaller padding */
+    }
+
+    .console-input-log, .console-output-log {
+        padding: 4px 0; /* Smaller padding */
+    }
+
+    .console-input {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for mobile phones */
+    .console-history, .console-input-container {
+        font-size: 10px;
+        padding: 12px 12px 0 12px; /* Even smaller padding */
+    }
+
+    .console-input-log, .console-output-log {
+        padding: 3px 0; /* Even smaller padding */
+    }
+
+    .console-input {
+        font-size: 12px; /* Even smaller font size */
+    }
+}
